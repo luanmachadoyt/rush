@@ -51,6 +51,8 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     background-image: url(../img/backgound.png);
     background-size: cover;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +95,44 @@ body::-webkit-scrollbar-thumb {
     border: 4px solid #385AC0;
     border-radius: 22px;
     color: var(--color);
+    z-index: 100000;
+}
+
+.menu-categorias .dropdown a {
+    padding: 5px 26px;
+    font-family: 'Lexend';
+    font-size: 15px;
+    color: white;
+}
+
+.menu-categorias ul li {
+    position: relative;
+}
+
+.menu-categorias .dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    border: 2px solid #385AC0;
+    border-radius: 15px;
+    top: 28px;
+}
+
+.menu-categorias .dropdown a {
+    display: block;
+    text-align: center;
+}
+
+.menu-categorias .dropdown a:hover {
+    display: block;
+    color: #385AC0;
+    text-align: center;
+}
+
+.menu-categorias ul li:hover .dropdown {
+    display: block;
+    z-index: 999;
 }
 
 /* ARROW DOWN */
@@ -130,12 +170,12 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     display: flex;
     gap: 15rem;
-    padding: 0 50px;
+    justify-content: center;
     align-items: center;
 }
 
 .sobre .text-sobre {
-    width: 50%;
+    width: 100%;
     text-align: start;
 }
 
@@ -144,6 +184,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sobre .text-sobre p {
+    width: 100%;
     font-size: 20px;
 }
 
@@ -158,7 +199,33 @@ body::-webkit-scrollbar-thumb {
     margin-top: 30px;
     transition: transform 500ms;
 }
+
 .sobre .text-sobre .discord:hover {
     transform: scale(1.06);
 }
 
+/* REGRAS */
+
+.regras {
+    background-image: url(../img/background-sobre.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.regras .img-regras{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.regras .img-regras img{
+   width: 450px;
+   cursor: pointer;
+   transition: transform 500ms;
+}
+.regras .img-regras img:hover{
+   transform: scale(1.1);
+}
