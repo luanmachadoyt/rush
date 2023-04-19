@@ -66,7 +66,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    background: rgba(78, 78, 78, 0.44);
+    background: rgb(36, 36, 36);
     border-radius: 0px 0px 30px 30px;
     padding: 10px 40px;
 }
@@ -93,9 +93,10 @@ body::-webkit-scrollbar-thumb {
 .main header .menu-categorias .categorias {
     padding: 7px 30px;
     border: 4px solid #385AC0;
-    border-radius: 22px;
+    border-radius: 15px;
     color: var(--color);
     z-index: 100000;
+    cursor: pointer;
 }
 
 .menu-categorias .dropdown a {
@@ -113,7 +114,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
     position: absolute;
     width: 100%;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     border: 2px solid #385AC0;
     border-radius: 15px;
     top: 28px;
@@ -172,6 +173,7 @@ body::-webkit-scrollbar-thumb {
     gap: 15rem;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
 }
 
 .sobre .text-sobre {
@@ -207,25 +209,81 @@ body::-webkit-scrollbar-thumb {
 /* REGRAS */
 
 .regras {
-    background-image: url(../img/background-sobre.png);
+    background-image: url(../img/background-regras.png);
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.regras .img-regras{
+
+.regras .img-regras {
     display: flex;
     gap: 3rem;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
 }
-.regras .img-regras img{
-   width: 450px;
-   cursor: pointer;
-   transition: transform 500ms;
+
+.regras .img-regras img {
+    width: 450px;
+    cursor: pointer;
+    transition: transform 500ms;
 }
-.regras .img-regras img:hover{
-   transform: scale(1.1);
+
+.regras .img-regras img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* CONECTAR */
+
+.conectar {
+    background-image: url(../img/background-conectar.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conectar h1 {
+    font-size: 60px;
+}
+
+.conectar p {
+    width: 70%;
+    text-align: center;
+}
+
+.conectar .dicas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.conectar .dicas #op {
+    padding: 15px;
+    width: 600px;
+    background-color: #ffffff;
+    background: #D9D9D9;
+    border-radius: 20px 5px;
+    color: black;
+    transition: transform 500ms;
+}
+.conectar .dicas #op:hover {
+    transform: scale(1.06);
+}
+.conectar .botao-id{
+    background-color: white;
+    color: black;
+    padding: 10px 100px;
+    border-radius: 100px;
+    transition: transform 500ms;
+}
+.conectar .botao-id:hover{
+    transform: scale(1.06);
 }

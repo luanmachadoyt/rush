@@ -6,6 +6,7 @@
 }
 
 @media screen and (max-width: 900px) {
+   
     .main header nav {
         display: none;
     }   
@@ -26,4 +27,7 @@
     .regras .img-regras img{
         display: none;
      }
+     .main{
+        background-image: url(../img/desenho-wallpaper.jpg);
+    }
 }
