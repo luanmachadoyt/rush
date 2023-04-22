@@ -30,4 +30,26 @@
      .main{
         background-image: url(../img/desenho-wallpaper.jpg);
     }
+    .main header {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .sobre .text-sobre h1 {
+        font-size: 64px;
+    }
+    .sobre .text-sobre p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .conectar h1{
+        font-size: 45px;
+    }
+    .conectar p{
+        font-size: 12px;
+    }
+    .conectar .dicas .op {
+        font-size: 10px;
+    }
 }
