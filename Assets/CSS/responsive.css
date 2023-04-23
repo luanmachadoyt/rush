@@ -2,7 +2,6 @@
     .sobre .img{
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 900px) {
@@ -25,31 +24,44 @@
 }
 @media screen and (max-width: 500px) {
     .regras .img-regras img{
-        display: none;
+        width: 250px;
      }
-     .main{
+    .main{
         background-image: url(../img/desenho-wallpaper.jpg);
     }
     .main header {
         width: 100%;
         padding: 5px 10px;
     }
-}
-@media screen and (max-width: 350px) {
-    .sobre .text-sobre h1 {
-        font-size: 64px;
+    .conectar .dicas .op {
+        width: 90%;
+        font-size: 10px;
     }
+    .sobre .text-sobre h1{
+        font-size: 60px;
+    }
+    .sobre .text-sobre {
+        gap: 2rem;
+    } 
     .sobre .text-sobre p {
         font-size: 16px;
         width: 100%;
-    }
+    } 
     .conectar h1{
         font-size: 45px;
     }
     .conectar p{
         font-size: 12px;
+        width: 90%;
     }
-    .conectar .dicas .op {
-        font-size: 10px;
+}
+
+@media screen and (max-width: 300px) {
+    .conectar .botao-id{
+        background-color: white;
+        color: black;
+        padding: 5px 50px;
+        border-radius: 100px;
+        transition: transform 500ms;
     }
 }
